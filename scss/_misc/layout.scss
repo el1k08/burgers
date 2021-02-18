@@ -1,0 +1,95 @@
+html {
+ font-size: 16px;
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 14px;
+  }
+
+}
+
+
+* {
+  box-sizing: border-box;
+ }
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: rem(16px);
+  line-height: 1.42;
+  margin: 0;
+  color: #221f1f;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+  max-width: 940px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  //min-width: 940px + 20px;
+  min-height: 100%;
+}
+
+.maincontent {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.section {
+  height: 100vh;
+  min-height: rem(650px);
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}

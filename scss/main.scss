@@ -1,0 +1,41 @@
+// colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+// font-size
+$font-size: 16px;
+
+
+// breakpoints
+$phones: 480px;
+$tablets: 768px;
+
+// normalize
+@import '_misc/normalize.scss';
+
+// setups
+@import '_misc/media';
+@import '_misc/mixins';
+@import '_misc/fonts';
+@import '_misc/layout';
+
+
+// sections
+@import 'sections/hero.scss';
+@import 'sections/best.scss';
+@import 'sections/reviews.scss';
+@import 'sections/order.scss';
+@import 'sections/team.scss';
+@import 'sections/menu.scss';
+@import 'sections/map.scss';
+
+// components
+@import 'components/header.scss';
+@import 'components/nav.scss';
+@import 'components/title.scss';
+@import 'components/btn.scss';
+@import 'components/socials.scss';
+@import 'components/footer.scss';
+@import 'components/burgerMenu.scss';

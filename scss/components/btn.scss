@@ -1,0 +1,26 @@
+.btn {
+  padding: rem(9px) rem(16px);
+  border-radius: rem(7px);
+  background: $red;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: rem(13px);
+
+  &:hover {
+    background: rgba($red, .8);
+  }
+
+  &--bg {
+    &_black {
+      background: $black;
+    }
+  }
+
+  &:disabled {
+    color: #868686;
+  }
+}

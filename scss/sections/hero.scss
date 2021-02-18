@@ -1,0 +1,48 @@
+.hero {
+  background: url('../../img/bg/hero-bg.png') center center no-repeat;
+  background-size: cover;
+
+  &__container {
+    justify-content: flex-start;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex: .8;
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include phones {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+
+  }
+
+  &__picture {
+    @include phones {
+     margin-bottom: rem(30px); 
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Lifehack', sans-serif;
+    font-size: rem(65px);
+    color: #fff;
+
+    @include phones {
+     font-size: rem(55px); 
+    }
+  }
+
+  .title {
+    margin-bottom: rem(10px);
+  }
+}

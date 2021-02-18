@@ -1,0 +1,25 @@
+.title {
+  font-size: rem(72px);
+  color: $black;
+  margin-bottom: rem(60px);
+  font-family: 'Gagalin', sans-serif;
+
+  @include phones {
+    font-size: rem(63px);
+  }
+
+  &--color {
+    &_yellow {
+      color: $yellow;
+    }
+    &_white {
+      color: #fff;
+    }
+  }
+
+  &--align {
+    &_center {
+      text-align: center;
+    }
+  }
+}

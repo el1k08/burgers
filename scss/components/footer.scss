@@ -1,0 +1,36 @@
+.footer {
+  background-color: black;
+  padding: rem(20px) 0;
+
+  &>.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones {
+      flex-direction: column;
+    }
+  }
+}
+
+.footer__col {
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: rem(14px);
+
+  @include phones {
+    margin-bottom: rem(10px);
+    text-align: center;
+  }
+}
+
+.footer__phone {
+  font-weight: 700;
+  text-decoration: none;
+  color: #e45028;
+}
+.footer__phone:hover {
+  text-decoration: underline;
+}

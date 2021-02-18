@@ -1,0 +1,51 @@
+.nav {
+  margin-right: rem(20px);
+
+  @include tablets {
+    display: none;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: rem(13px);
+    font-weight: 500;
+
+    &:hover {
+      opacity: .75;
+    }
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: rem(4px);
+      height: rem(4px);
+      background: #fff;
+      border-radius: 50%;
+      margin: 0 rem(10px);
+    }
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+}
+

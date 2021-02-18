@@ -1,0 +1,58 @@
+.reviews {
+  &__list {
+    background: #000;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    height: 50%;
+    width: 25%;
+
+    @include tablets {
+      width: 50%;
+      height: 25%;
+
+      text-align: center;
+    }
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(100%);
+    position: relative;
+
+    &:hover {
+      .reviews__hover {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(#141414, .7);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    padding: rem(20px) rem(30px);
+    padding-top: rem(30px);
+  }
+
+  &__title {
+    font-family: 'Gagalin', sans-serif;
+    font-size: rem(14px);
+  }
+
+  &__text {
+    font-size: rem(14px);
+    line-height: 1.8;
+  }
+
+}
